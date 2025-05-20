@@ -1,0 +1,64 @@
+#main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    gap: 20px;
+}
+
+#text-column,
+#image-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text1,.text2,.text3 {
+    font-size: 16px;
+    line-height: 1.6;
+    white-space: normal;   /* ✅ Allow text wrapping */
+    word-wrap: break-word; /* ✅ Wrap long words if needed */
+}
+
+#image-column img {
+    max-width: 100%;
+    height: auto;
+}
+#main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    gap: 20px;
+}
+
+#text-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* ✅ Adds space between each text block */
+    overflow-x: auto; /* ✅ Enables horizontal scrolling if needed */
+}
+
+#text-column > div {
+    padding: 10px; /* ✅ Padding inside each text block */
+    background-color: #f9f9f9; /* Optional: light background for visibility */
+    white-space: normal; /* ✅ Allow wrapping */
+    word-wrap: break-word; /* ✅ Prevent overflow from long words */
+}
+
+#image-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+#image-column img {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Scroll GIF Switch</title>
+</head>
+
+<body>
+  <div id="main-container">
+    <div id="text-column">
+      <div class="text text1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis quae veritatis, officia explicabo perferendis magni minus sint similique blanditiis aspernatur. Repellat, nobis?
+      </div>
+      <div class="text text2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea blanditiis suscipit officia possimus libero totam debitis iure consectetur. Rerum, quisquam?
+      </div>
+      <div class="text text3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quae aspernatur obcaecati doloremque veniam assumenda labore quibusdam accusantium, culpa totam?
+      </div>
+    </div>
+
+    <div id="image-column">
+      <img class="gif" id="gif1" src="1.gif" alt="1" />
+      <img class="gif" id="gif2" src="2.gif" alt="2" style="display: none;" />
+      <img class="gif" id="gif3" src="3.gif" alt="3" style="display: none;" />
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
