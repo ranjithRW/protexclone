@@ -1,6 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-// Function to show the correct GIF
 function showGif(gifId) {
   document.querySelectorAll(".gif").forEach((gif) => {
     gif.style.display = "none";
@@ -8,14 +7,12 @@ function showGif(gifId) {
   document.getElementById(gifId).style.display = "block";
 }
 
-// Mapping class names to GIF IDs
 const gifMap = {
   text1: "gif1",
   text2: "gif2",
   text3: "gif3"
 };
 
-// Create ScrollTriggers
 document.querySelectorAll("#text-column .text").forEach((textBlock) => {
   const classList = Array.from(textBlock.classList);
   const targetClass = classList.find((cls) => gifMap[cls]);
@@ -25,6 +22,7 @@ document.querySelectorAll("#text-column .text").forEach((textBlock) => {
     trigger: textBlock,
     start: "top center",
     end: "bottom center",
+    scroller: "#text-column", // tell GSAP to track scrolling of this element
     onEnter: () => showGif(gifId),
     onEnterBack: () => showGif(gifId)
   });
