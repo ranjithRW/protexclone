@@ -1,64 +1,45 @@
 #main-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    border: 1px solid #ccc;
-    margin: 10px;
-    gap: 20px;
-}
-
-#text-column,
-#image-column {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.text1,.text2,.text3 {
-    font-size: 16px;
-    line-height: 1.6;
-    white-space: normal;   /* ✅ Allow text wrapping */
-    word-wrap: break-word; /* ✅ Wrap long words if needed */
-}
-
-#image-column img {
-    max-width: 100%;
-    height: auto;
-}
-#main-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    border: 1px solid #ccc;
-    margin: 10px;
-    gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 10px;
+  gap: 20px;
 }
 
 #text-column {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* ✅ Adds space between each text block */
-    overflow-x: auto; /* ✅ Enables horizontal scrolling if needed */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-x: auto;
 }
 
 #text-column > div {
-    padding: 10px; /* ✅ Padding inside each text block */
-    background-color: #f9f9f9; /* Optional: light background for visibility */
-    white-space: normal; /* ✅ Allow wrapping */
-    word-wrap: break-word; /* ✅ Prevent overflow from long words */
+  padding: 10px;
+  background-color: #f9f9f9;
+  white-space: normal;
+  word-wrap: break-word;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 #image-column {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 300px;
 }
 
-#image-column img {
-    max-width: 100%;
-    height: auto;
+#image-column img.gif {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
